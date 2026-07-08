@@ -1,0 +1,19 @@
+# Optional: badges for journals/conferences on the publications page.
+"Transportation Research Part A: Policy and Practice":
+  url: https://www.sciencedirect.com/journal/transportation-research-part-a-policy-and-practice
+  color: "#1f77b4"
+"Transportation Research Part D: Transport and Environment":
+  url: https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment
+  color: "#2ca02c"
+"Energy Research \\& Social Science":
+  url: https://www.sciencedirect.com/journal/energy-research-and-social-science
+  color: "#d62728"
+"Cities":
+  url: https://www.sciencedirect.com/journal/cities
+  color: "#9467bd"
+"Transportation":
+  url: https://link.springer.com/journal/11116
+  color: "#17becf"
+"Transactions in GIS":
+  url: https://onlinelibrary.wiley.com/journal/14679671
+  color: "#bcbd22"

@@ -1,0 +1,154 @@
+# Pages CMS configuration
+# Edit content via https://app.pagescms.org/
+# Sign in with GitHub, choose `knu-giscience/knu-giscience.github.io`,
+# and the editor uses this file to render forms.
+
+media:
+  - name: images
+    label: Images
+    input: assets/img
+    output: /assets/img/
+
+settings:
+  merge: false  # commit directly to main
+
+content:
+
+  # ===== PROJECTS =====
+  - name: projects
+    label: Projects
+    description: Funded research projects.
+    type: collection
+    path: _projects
+    filename: "{year}-{fields.title|slugify}.md"
+    view:
+      fields: [title, period, sponsor, category]
+      primary: title
+      sort: [-importance]
+    fields:
+      - { name: layout, type: string, default: page, hidden: true }
+      - { name: title, label: Project title, type: string, required: true }
+      - { name: description, label: Short description, type: string }
+      - { name: img, label: Cover image, type: image, options: { path: projects } }
+      - { name: importance, label: Display order (lower = first), type: number, default: 99 }
+      - { name: category, label: Category, type: select, options: { values: [ongoing, completed] }, default: ongoing }
+      - { name: period, label: "Period (e.g. 2026.04 – 2026.10)", type: string }
+      - { name: sponsor, label: Sponsor, type: string }
+      - { name: body, label: Description, type: rich-text }
+
+  # ===== MEMBERS =====
+  - name: members
+    label: Members
+    description: Lab roster (PI, students, alumni).
+    type: file
+    path: _data/members.yml
+    fields:
+      - name: pi
+        label: Principal Investigator
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string, default: "Associate Professor" }
+          - { name: image, label: Photo, type: image, options: { path: . } }
+          - { name: email, label: Email, type: string }
+          - { name: interests, label: Research interests, type: string }
+          - { name: education, label: Education, type: text }
+          - { name: position, label: Position, type: string }
+          - { name: orcid, label: ORCID, type: string }
+          - { name: scholar, label: Google Scholar ID, type: string }
+
+      - name: phd
+        label: PhD Students
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string, default: "PhD Student" }
+          - { name: since, label: Since, type: string }
+          - { name: image, label: Photo, type: image, options: { path: members } }
+          - { name: email, label: Email, type: string }
+          - { name: interests, label: Interests, type: string }
+          - { name: note, label: Note, type: string }
+
+      - name: ms
+        label: MS Students
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string, default: "MS Student" }
+          - { name: since, label: Since, type: string }
+          - { name: image, label: Photo, type: image, options: { path: members } }
+          - { name: email, label: Email, type: string }
+          - { name: interests, label: Interests, type: string }
+          - { name: note, label: Note, type: string }
+
+      - name: ug
+        label: Undergraduate Students
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+          - { name: since, label: Since, type: string }
+          - { name: image, label: Photo, type: image, options: { path: members } }
+          - { name: email, label: Email, type: string }
+          - { name: interests, label: Interests, type: string }
+
+      - name: alumni
+        label: Alumni
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+          - { name: image, label: Photo, type: image, options: { path: members } }
+          - { name: note, label: Current position, type: string }
+
+  # ===== ABOUT / CONTACT =====
+  - name: about
+    label: Home (About)
+    type: file
+    path: _pages/about.md
+    fields:
+      - { name: title, type: string, default: about, hidden: true }
+      - { name: subtitle, label: Subtitle, type: string }
+      - { name: body, label: Body, type: rich-text }
+
+  - name: contact
+    label: Contact
+    type: file
+    path: _pages/contact.md
+    fields:
+      - { name: title, type: string, default: contact, hidden: true }
+      - { name: body, label: Body, type: rich-text }
+
+  # ===== PUBLICATIONS (4 BibTeX files) =====
+  - name: pub_journal
+    label: "Publications · I. Journal Articles (BibTeX)"
+    type: file
+    path: _bibliography/01_journal.bib
+    fields:
+      - { name: body, label: BibTeX, type: code, options: { language: bibtex } }
+
+  - name: pub_book
+    label: "Publications · II. Book Chapters (BibTeX)"
+    type: file
+    path: _bibliography/02_book_chapter.bib
+    fields:
+      - { name: body, label: BibTeX, type: code, options: { language: bibtex } }
+
+  - name: pub_conf
+    label: "Publications · III. Conference Proceedings (BibTeX)"
+    type: file
+    path: _bibliography/03_conference.bib
+    fields:
+      - { name: body, label: BibTeX, type: code, options: { language: bibtex } }
+
+  - name: pub_report
+    label: "Publications · IV. Research Reports (BibTeX)"
+    type: file
+    path: _bibliography/04_report.bib
+    fields:
+      - { name: body, label: BibTeX, type: code, options: { language: bibtex } }

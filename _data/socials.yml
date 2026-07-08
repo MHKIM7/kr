@@ -1,0 +1,9 @@
+# Social / academic links shown on the homepage and in the footer.
+# Comment out any line you don't want to display.
+
+# cv_pdf: /assets/pdf/cv.pdf            # uncomment when CV PDF is added
+# email: jaehyun.lee@knu.ac.kr          # uncomment when ready
+orcid_id: 0000-0003-4007-7048           # Prof. Lee's ORCID
+# scholar_userid:                       # add Google Scholar ID when ready
+# github_username: knugislee1           # uncomment if you want a GitHub icon
+rss_icon: true                          # show RSS feed icon

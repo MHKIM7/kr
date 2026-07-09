@@ -3,7 +3,7 @@ layout: page
 title: 개인 활동 데이터 기반 감염병 노출 가능성 분석 방법론 개발
 description: 개인 활동 데이터에 대한 시공간적 분석 및 활동발생 장소 특성에 대한 공간 분석
 img: assets/img/projects/disease.jpg
-importance: 20
+importance: 23
 category: completed
 period: 2021.09 – 2021.12
 sponsor: 국토연구원 (KRIHS)

@@ -116,14 +116,19 @@ content:
       - { name: subtitle, label: Subtitle, type: string }
       - { name: body, label: Body, type: rich-text }
 
-  - name: contact
-    label: Contact
-    type: file
-    path: _pages/contact.md
-    fields:
-      - { name: title, type: string, default: contact, hidden: true }
-      - { name: body, label: Body, type: rich-text }
-
+- name: contact
+  label: Contact
+  type: file
+  path: _pages/contact.md
+  fields:
+    - { name: layout, type: string, default: page, hidden: true }
+    - { name: title, type: string, default: contact, hidden: true }
+    - { name: permalink, type: string, default: "/contact/", hidden: true }
+    - { name: description, type: string, default: "How to reach us, and how to find our office.", hidden: true }
+    - { name: nav, type: boolean, default: true, hidden: true }
+    - { name: nav_order, type: number, default: 5, hidden: true }
+    - { name: body, label: Body (Markdown/HTML), type: code, options: { language: markdown } }
+    
   # ===== PUBLICATIONS (4 BibTeX files) =====
   - name: pub_journal
     label: "Publications · I. Journal Articles (BibTeX)"

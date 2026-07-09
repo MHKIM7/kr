@@ -190,6 +190,10 @@ latest_posts:
 </div>
 
 <p class="home-intro">
+  <strong>지리정보과학 및 공간빅데이터</strong> 연구실 홈페이지에 방문하신 것을 환영합니다.
+  우리 연구실은 <strong>경북대학교 지리학과 소속</strong>이며,
+  지리정보 과학, 공간 빅데이터, 모빌리티의 융복합 연구를 통해
+  도시와 지역, 그리고 사람들이 어떻게 이동하고 변화하는지 연구합니다.
   We are a research lab at the <strong>Department of Geography, Kyungpook
   National University</strong>, working at the intersection of GIScience,
   spatial big data, and mobility — to understand how cities, regions, and

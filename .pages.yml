@@ -36,6 +36,24 @@ content:
       - { name: sponsor, label: Sponsor, type: string }
       - { name: body, label: Description, type: rich-text }
 
+  # ===== news =====
+  - name: news
+    label: News
+    description: Lab news and updates.
+    type: collection
+    path: _news
+    filename: "{year}-{month}-{day}-{fields.title|slugify}.md"
+    view:
+      fields: [title, date]
+      primary: title
+      sort: [-date]
+    fields:
+      - { name: layout, type: string, default: page, hidden: true }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string }
+      - { name: img, label: Image, type: image, options: { path: news } }
+      - { name: date, label: Date, type: date }
+
   # ===== MEMBERS =====
   - name: members
     label: Members

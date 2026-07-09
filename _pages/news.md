@@ -17,7 +17,7 @@ nav_order: 4
     border-bottom: 1px solid var(--global-divider-color, #eee);
   }
   @media (min-width: 760px) {
-    .proj { grid-template-columns: 160px 1fr 90px; gap: 1.4rem; align-items: start; }
+    .proj { grid-template-columns: 160px 1fr; gap: 1.4rem; align-items: start; }
   }
   .proj .meta {
     font-size: 0.85rem;
@@ -48,18 +48,19 @@ nav_order: 4
   .thumb-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
   }
-  .proj .thumb {
-    width: 90px;
-    height: 90px;
+  .thumb {
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     border-radius: 6px;
     cursor: zoom-in;
     border: 1px solid var(--global-divider-color, #ddd);
     transition: opacity 0.15s;
   }
-  .proj .thumb:hover { opacity: 0.85; }
+  .thumb:hover { opacity: 0.85; }
   #proj-lightbox {
     display: none;
     position: fixed;
@@ -94,25 +95,31 @@ nav_order: 4
   {% for n in sorted_news %}
     <div class="proj">
       <div class="meta">
-        <span class="label">Date</span>{{ n.date }}
+        <span class="label">Date</span>
+        {% assign date_str = n.date | append: "" %}
+        {% if date_str contains " - " %}
+          {{ date_str }}
+        {% else %}
+          {{ n.date | date: "%Y.%m.%d" }}
+        {% endif %}
       </div>
       <div>
         <h3>{{ n.title }}</h3>
         {% if n.description %}<p>{{ n.description }}</p>{% endif %}
+        {% if n.images and n.images.size > 0 %}
+          <div class="thumb-group">
+            {% for item in n.images %}
+              {% assign img_first_char = item | slice: 0, 1 %}
+              {% if img_first_char == "/" %}
+                {% assign img_src = item %}
+              {% else %}
+                {% assign img_src = "/assets/img/" | append: item %}
+              {% endif %}
+              <img class="thumb" src="{{ img_src | relative_url }}" alt="{{ n.title }}" onclick="openProjLightbox('{{ img_src | relative_url }}')">
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
-{% if n.images and n.images.size > 0 %}
-  <div class="thumb-group">
-    {% for item in n.images %}
-      {% assign img_first_char = item | slice: 0, 1 %}
-      {% if img_first_char == "/" %}
-        {% assign img_src = item %}
-      {% else %}
-        {% assign img_src = "/assets/img/" | append: item %}
-      {% endif %}
-      <img class="thumb" src="{{ img_src | relative_url }}" alt="{{ n.title }}" onclick="openProjLightbox('{{ img_src | relative_url }}')">
-    {% endfor %}
-  </div>
-{% endif %}
     </div>
   {% endfor %}
 </div>

@@ -14,30 +14,30 @@ phd:
     role: 일반대학원 지리학과 박사과정
     since: 2017-1
     image: members/jihyun_lee.jpg
-    interests: Behavioral Geography
+    interests: 행태지리
     note: 한국국토정보공사(LX) 재직중
   - name: 최수정(Soojeong Choi)
     role: 일반대학원 지리학과 박사과정
     since: 2025-1
     image: members/soojeong_choi.jpg
-    interests: Activity-Travel Behavior, Time Geography, Behavioral Modeling
+    interests: " 활동-통행 행태, 시공간 지리학, 행태 모델링"
     note: 한국교통연구원(KOTI) 재직중
 ms:
   - name: 조민영(Minyeong Cho)
     role: 일반대학원 지리학과 석사과정
     since: 2022-1
     image: members/minyeong_cho.jpg
-    interests: Behavioral Geography, Disasters, GIS
+    interests: 행태지리, 재난·재해, GIS
   - name: 김명환(Myeonghwan Kim)
     role: 일반대학원 지리학과 석사과정
     since: 2025-1
     image: members/myeonghwan_kim.jpg
-    interests: GIS, Transportation Geography, Transport Equity
+    interests: GIS, 교통지리, 교통형평성
   - name: 최민정(Minjeong Choi)
     role: 일반대학원 지리학과 석사과정
     since: 2026-1
     image: members/minjeong_choi.jpg
-    interests: GIS, Transportation Geography
+    interests: GIS, 교통지리
   - name: 정연우(Yeonwoo Jung)
     role: MS Student
     since: 2026-1
@@ -48,7 +48,7 @@ ug:
     role: 지리학과 학석사연계과정
     since: 2025-2
     image: members/chanbum_hwang.jpg
-    interests: GIS, Transportation Geography, Urban Geography
+    interests: GIS, 교통지리, 도시지리
 alumni:
   - name: Jiyun Shim
     role: 지리학 석사 (graduated 2022-1)

@@ -6,7 +6,7 @@ img: /assets/img/p-24.png
 importance: 3
 category: ongoing
 period: 2025.05 – 2025.10
-sponsor: 국토연구 (KRIHS)
+sponsor: 국토연구원 (KRIHS)
 ---
 한국의 2050 탄소중립 로드맵을 지원하기 위해 다양한 도시 공간 유형별 탄소 저감 조치의 우선순위 설정 모델을 제안함
 

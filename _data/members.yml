@@ -1,92 +1,60 @@
-# GIScience & Spatial Bigdata Lab — Members
-# image_position controls how the photo is cropped to a circle on the
-# members page. Use CSS `object-position` syntax (e.g. "center 30%",
-# "70% 25%", "left top").
-
 pi:
   - name: Jae Hyun Lee
     role: Associate Professor
     image: prof_pic.jpg
-    image_position: "center 30%"
-    email:
     interests: Transportation Geography, Spatial Big Data, GIScience
     education: |
       BS, Geography, Kyung Hee University.
       MS, Geography, Kyung Hee University.
       PhD, Geography, UC Santa Barbara.
-    position: Associate Professor, Department of Geography, Kyungpook National University (since 2025.04)
+    position: Associate Professor, Department of Geography, Kyungpook National
+      University (since 2025.04)
     orcid: 0000-0003-4007-7048
-    scholar:
-
 phd:
   - name: Jihyun Lee
     role: PhD Student
     since: 2017-1
     image: members/jihyun_lee.jpg
-    image_position: "center 28%"
-    email:
     interests: Behavioral Geography
     note: Currently at Korea Land and Geospatial InformatiX Corporation (LX)
-
   - name: Soojeong Choi
     role: PhD Student
     since: 2025-1
     image: members/soojeong_choi.jpg
-    image_position: "center 30%"
-    email:
     interests: Activity-Travel Behavior, Time Geography, Behavioral Modeling
-
 ms:
   - name: Minyeong Cho
     role: MS Student
     since: 2022-1
     image: members/minyeong_cho.jpg
-    image_position: "25% 30%"
-    email:
     interests: Behavioral Geography, Disasters, GIS
-
   - name: Myeonghwan Kim
     role: MS Student
     since: 2025-1
     image: members/myeonghwan_kim.jpg
-    image_position: "70% 30%"
-    email:
     interests: GIS, Transportation Geography, Transport Equity
-
   - name: Minjeong Choi
     role: MS Student
     since: 2026-1
     image: members/minjeong_choi.jpg
-    image_position: "center 28%"
-    email:
     interests: GIS, Transportation Geography
-
   - name: Yeonwoo Jung
     role: MS Student
     since: 2026-1
     image: members/yeonwoo_jung.jpg
-    image_position: "60% 25%"
-    email:
     interests: GIS
-
 ug:
   - name: Chanbum Hwang
     role: BS+MS Combined Program
     since: 2025-2
     image: members/chanbum_hwang.jpg
-    image_position: "center 22%"
-    email:
     interests: GIS, Transportation Geography, Urban Geography
-
 alumni:
   - name: Jiyun Shim
     role: MS (graduated 2022-1)
     image: members/jiyun_shim.jpg
-    image_position: "center 25%"
-    note: Currently at the Korea Transport Institute (KOTI)
-
+    note: 한국교통연구원(KOTI) 재직중
   - name: Dabin Jeong
     role: MS (graduated 2023-2)
     image: members/dabin_jeong.jpg
-    image_position: "center 25%"
-    note: Currently at the Korea Transport Institute (KOTI)
+    note: 한국교통연구원(KOTI) 재직중

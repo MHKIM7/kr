@@ -1,11 +1,11 @@
 ---
-   layout: page
-   title: contact
-   permalink: /contact/
-   description: How to reach us, and how to find our office.
-   nav: true
-   nav_order: 5
-   ---
+layout: page
+title: contact
+permalink: /contact/
+description: How to reach us, and how to find our office.
+nav: true
+nav_order: 5
+---
 ## Address
 
 **지리정보과학 및 공간빅데이터 연구실**  

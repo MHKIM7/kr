@@ -1,7 +1,8 @@
 ---
 layout: page
 title: 국가간선도로망 구축에 따른 정책효과 GIS 분석
-description: 2024년 기준 고속국도, 일반국도, 국가지원지방도의 기초 GIS-DB 구축 및 시설 데이터 갱신을 통한 도로 건설 효과 및 성과 지표의 산출
+description: 2024년 기준 고속국도, 일반국도, 국가지원지방도의 기초 GIS-DB 구축 및 시설 데이터 갱신을 통한 도로 건설 효과
+  및 성과 지표를 산출함
 img: /assets/img/projects/highway.jpg
 importance: 1
 category: ongoing

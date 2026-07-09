@@ -16,12 +16,13 @@ phd:
     since: 2017-1
     image: members/jihyun_lee.jpg
     interests: Behavioral Geography
-    note: Currently at Korea Land and Geospatial InformatiX Corporation (LX)
+    note: 한국국토정보공사(LX) 재직중
   - name: Soojeong Choi
     role: PhD Student
     since: 2025-1
     image: members/soojeong_choi.jpg
     interests: Activity-Travel Behavior, Time Geography, Behavioral Modeling
+    note: 한국교통연구원(KOTI) 재직중
 ms:
   - name: Minyeong Cho
     role: MS Student
